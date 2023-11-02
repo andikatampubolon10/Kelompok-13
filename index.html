@@ -1,0 +1,113 @@
+<!--
+    Nama : Andika Parlinggoman Tampubolon
+    NIM  : 11423021
+    Kelas: TRPL1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music</title>
+    <link rel="stylesheet" href="Style_021.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <center>
+                <p><span id="tanggalwaktu"></span></p>
+                <script>
+                    var tw = new Date();
+                    if (tw.getTimezoneOffset() == 0) (a = tw.getTime() + (7 * 60 * 60 * 1000))
+                    else (a = tw.getTime());
+                    tw.setTime(a);
+                    var tahun = tw.getFullYear();
+                    var hari = tw.getDay();
+                    var bulan = tw.getMonth();
+                    var tanggal = tw.getDate();
+                    var hariarray = new Array("Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat");
+                    var bulanarray = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Agu", "Sep", "Oct", "Nop", "Des");
+                    document.getElementById("tanggalwaktu").innerHTML = hariarray[hari] + " " + bulanarray[bulan] + " " + tanggal + " " + tahun + " " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10) ? "0" : "") + tw.getMinutes() + ":" + ((tw.getSeconds() < 10) ? "0" : "") + tw.getSeconds() + (" GMT+0700(Indochina Time) ");
+                </script>
+            </center>
+            <figure id="logo">
+                <img src="logo.png">
+            </figure>
+            <div class="signup">
+                <button onclick="myFunction()" href="registrasi_021.html">Sign Up&ensp;</button>
+            <select class="language">
+                    <option value="Inggris">Inggris</option>
+					<option value="Jerman">Jerman</option>
+					<option value="Prancis">Prancis</option>
+					<option value="Indonesia">Indonesia</option>
+					<option value="Portugal">Portugal</option>				
+            </select>
+            <p id="demo"></p>
+            </div>
+    </header>
+    <hr>
+    <figure class="video">
+        <video src="video2.mp4" controls></video>
+    </figure>
+    <section class="konten">
+    <section class="main">
+            <section class="a">
+            <h3><a href="" style="text-decoration: none;">Recomended Songs >></a></h3>
+            <article class="konten1">
+            <figure class="image">
+                    <img src="soundrenaline.png" class="a1">
+                    <figcaption >Soundrenaline</figcaption>
+            </figure>
+            <figure class="image">
+                    <img src="fresh_inter.png" class="a1">
+                    <figcaption>Fresh International</figcaption>
+            </figure>
+            <figure class="image">
+                    <img src="fresh_indo.png" class="a1">
+                    <figcaption>Fresh Indonesia</figcaption>
+            </figure>
+            </article>
+            </section>
+    <section class="b">
+        <div class="contact">
+        <h3>Contact Us</h3>
+        <ul id="list1">
+            <a href="" target="_blank"><li>Facebook MyMUSIC</li></a>
+            <a href="" target="_blank"><li>Twitter MyMUSIC</li></a>
+            <a href="" target="_blank"><li>Instagram MyMUSIC</li></a>
+            <br>
+        </ul>
+        </div>
+        <figure class="audio">
+            <audio controls>
+                <source src="03_Kodaline_Love_Like_This.mp3" type="audio/mpeg">
+            </audio>
+            <figcaption>Listen Here Directly - Kodaline All I Want</figcaption>
+        </figure>
+        </section>
+    </section>
+        <section class="sidebar">
+            <ol type="1" id="list2">
+                <h2><font color="#ff8093">Hot tracks</font></h2>
+                <h4><li>Happy Now - Zedd</li>
+                <li>Berpisah itu Mudah - Mikha</li>
+                <li>2002 - Anne Marie</li>
+                <li>Girls Like You - Maroon 5</li>
+                <li>FRIENDS - Marshmello</li>
+                <li>Jangan - Marion Jola</li>
+                <li>Solo - Clean Bandit</li>
+                <li>Imagination - Shawn Mendes</li>
+                <li>Nerveous - Shawn Mendes</li>
+                <li>Mercy - Shawn Mendes</li></h4>
+            </ol>
+            </section>
+        </section>
+        <hr>
+        <footer>
+            <p align="center" id="tanggal">Copyright © MyMUwaSIC 2018</p>
+        </footer>
+    </section>
+    <script language="Javascript" src="script.js"></script>
+</body>
+</html>
